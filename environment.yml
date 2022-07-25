@@ -1,0 +1,10 @@
+name: python_eda
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - jupyter
+  - matplotlib
+  - seaborn
+  - numpy
+  - pip
