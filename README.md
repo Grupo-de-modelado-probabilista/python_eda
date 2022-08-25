@@ -34,8 +34,27 @@ Para usar este material es necesario tener instalado Python. Se recomienda la ve
 * Ipython 8.3
 * Jupyter 1.0.0
 
-Se recomienda instalar primero [Anaconda](https://www.anaconda.com/products/distribution). Luego instalar el resto de los paquetes con los comandos:
+Se recomienda instalar primero [Anaconda](https://www.anaconda.com/products/distribution). Luego instalar los paquetes necesarios ejecutando el siguiente comando en la terminal (en Windows, utilizar la aplicación `cmd.exe` llamada "Símbolo del Sistema" o "Command Prompt" en inglés):
 
+```bash
+conda env create -f environment.yml
+```
+
+Este creará un ambiente que nos permite aislar los paquetes y sus versiones que vamos a utilizar durante el curso.
+De esta forma, no se altera la versión de los paquetes que se usa para otras aplicaciones.
+
+Para activar el ambiente debemos ejecutar el siguiente comando en la terminal:
+
+```bash
+conda activate python_eda
+```
+
+Ahora, podemos ejecutar todas las notebooks del curso y trabajar de forma local.
+Cuando queramos desactivar el ambiente, utilizamos:
+
+```bash
+conda deactivate
+```
 
 ## Contribuciones
 Todo el contenido de este repositorio es abierto, esto quiere decir que cualquier persona interesada puede contribuir al mismo. Todas las contribuciones serán bien recibidas incluyendo:
